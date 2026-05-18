@@ -1,6 +1,5 @@
 import User from "../models/user.model.js";
 import bcrypt from "bcrypt";
-import { response } from "express";
 import jwt from "jsonwebtoken";
 import Car from "../models/car.model.js";
 

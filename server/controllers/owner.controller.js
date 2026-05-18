@@ -24,16 +24,15 @@ export const changeRoleOwner = async (req, res) => {
 
 export const addCar = async (req, res) => {
   try {
-    const ownerId = req.user._id;
-    const carData = JSON.parse(req.body.carData || "{}");
-  
     if (!req.user || !req.user._id) {
-      console.log("Add car error: req.user not found");
       return res.status(401).json({
         success: false,
-        message: "Your account cannot be authenticated.",
+        message: "User not authenticated.",
       });
     }
+
+    const ownerId = req.user._id;
+    const carData = JSON.parse(req.body.carData || "{}");
 
     
 
@@ -162,10 +161,7 @@ export const deleteCar = async (req, res) => {
       });
     }
 
-    // Soft delete - remove owner and mark as unavailable
-    car.owner = null;
-    car.isAvaliable = false;
-    await car.save();
+    await Car.findByIdAndDelete(carId);
 
     return res.status(200).json({
       success: true,
