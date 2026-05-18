@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+﻿import React, { useEffect, useState } from "react";
 import { assets} from "../../assets/assets";
 import Title from "../../components/Title";
 import { useAppContext } from "../../Context/AppContext";
@@ -59,7 +59,7 @@ const ManageCars = () => {
     isOwner && fetchOwnersCars();
   }, [isOwner]);
   return (
-    <div className="px-4 pt-10 md:px-10 w-full bg-[#F0E491]">
+    <div className="px-4 pt-10 md:px-10 w-full bg-light">
       <Title
         title={"Manage Cars"}
         subTitle={

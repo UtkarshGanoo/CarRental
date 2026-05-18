@@ -1,9 +1,9 @@
-import React from "react";
+﻿import React from "react";
 import { assets } from "../assets/assets";
 
 const Footer = () => {
   return (
-    <div className="text-black pt-8 px-6 md:px-16 lg:px-24 xl:px-32 bg-[#F0E491]">
+    <div className="text-black pt-8 px-6 md:px-16 lg:px-24 xl:px-32 bg-light">
       <div className="flex flex-wrap justify-between gap-12 md:gap-6">
         <div className="max-w-80">
           <h2 alt="logo" className="h-8 md:h-9 text-3xl text-black"  >Nomadiq</h2>

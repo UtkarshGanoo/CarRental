@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+﻿import React, { useState } from "react";
 import { assets, cityList } from "../assets/assets";
 import { useAppContext } from "../Context/AppContext";
 
@@ -16,12 +16,12 @@ const Hero = () => {
   return (
     <div className="h-screen flex flex-col items-center justify-center gap-14 bg-light text-center ">
       <h1 className="text-4xl md:text-5xl font-semibold max-md:mt-15">
-        Best Cars for rent 
+        Liberate your miles
       </h1>
 
       <form
         onSubmit={handleSearch}
-        className="flex flex-col md:flex-row items-start text-white md:items-center justify-between p-6 rounded-lg md:rounded-full w-full max-w-80 md:max-w-200 bg-[#96A78D] shadow-[0px_8px_20px_rgba(0,0,0,0.1)]"
+        className="flex flex-col md:flex-row items-start text-white md:items-center justify-between p-6 rounded-lg md:rounded-full w-full max-w-80 md:max-w-200 bg-primary-dull shadow-[0px_8px_20px_rgba(0,0,0,0.1)]"
       >
         <div className="flex flex-col md:flex-row items-start md:items-center gap-10 min-md:ml-8">
           <div className="flex flex-col items-start gap-2">

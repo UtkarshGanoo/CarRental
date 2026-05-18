@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { assets } from "../assets/assets";
-import Loader from "../components/Loader";
+
 import { useAppContext } from "../Context/AppContext";
 import toast from "react-hot-toast";
 
@@ -160,9 +160,7 @@ const CarDetails = () => {
         </form>
       </div>
     </div>
-  ) : (
-    <Loader />
-  );
+  ) : null;
 };
 
 export default CarDetails;

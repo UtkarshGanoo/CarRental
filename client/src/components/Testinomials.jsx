@@ -1,15 +1,15 @@
-import React from "react";
+﻿import React from "react";
 import Title from "./Title";
 
 const Testinomials = () => {
   return (
-    <div className="py-28 px-6 md:px-16 lg:px-24 xl:px-44 bg-[#FFDE63]">
+    <div className="py-28 px-6 md:px-16 lg:px-24 xl:px-44 bg-light">
       <Title
         title="What Our Customers Say"
         subTitle="Discover why discering travelers choose StayVenture for their luxury accommondations around the world."
       />
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-18">
-        <div className="text-sm w-80 border border-gray-200 pb-6 rounded-lg bg-[#adadad] shadow-[0px_4px_15px_0px] shadow-black/5">
+        <div className="text-sm w-80 border border-gray-200 pb-6 rounded-lg bg-primary-dull text-white shadow-[0px_4px_15px_0px] shadow-black/5">
           <div className="flex flex-col items-center px-5 py-4 relative">
             <img
               className="h-24 w-24 absolute -top-14 rounded-full"

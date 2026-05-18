@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+﻿import React, { useState } from "react";
 import { assets, ownerMenuLinks } from "../../assets/assets";
 import { NavLink, useLocation } from "react-router-dom";
 import { useAppContext } from "../../Context/AppContext";
@@ -28,7 +28,7 @@ const Sidebar = () => {
     }
   };
   return (
-    <div className="relative min-h-screen md:flex flex-col items-center pt-8 max-w-13 md:max-w-60 border-r border-borderColor text-sm bg-[#F0E491]">
+    <div className="relative min-h-screen md:flex flex-col items-center pt-8 max-w-13 md:max-w-60 border-r border-borderColor text-sm bg-light">
       <div className="group relative">
         <label htmlFor="image">
           <img

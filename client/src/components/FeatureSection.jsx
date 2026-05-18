@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Loader from "./Loader";
+
 import Title from "./Title";
 import { assets} from "../assets/assets";
 import CarCard from "./CarCard";
@@ -10,10 +10,10 @@ import axios from "axios";
 const FeatureSection = () => {
   const navigate = useNavigate();
   const {cars} = useAppContext();
-  if(!cars || cars.length === 0) return <Loader />;
+  if(!cars || cars.length === 0) return null;
 
   return (
-    <div className="flex flex-col items-center py-24 px-6 md:px-16 lg:px-24 xl:px-32 bg-[#dfd283]">
+    <div className="flex flex-col items-center py-24 px-6 md:px-16 lg:px-24 xl:px-32 bg-light">
       <div >
         <Title
           title="Featured Vehicles"
@@ -34,7 +34,7 @@ const FeatureSection = () => {
         navigate('/cars');
         scrollTo(0,0);
       }}
-      className="flex items-center justify-center gap-2 px-6 py-2 border border-black hover:bg-[#D3AF37] rounded-md mt-18 cursor-pointer">
+      className="flex items-center justify-center gap-2 px-6 py-2 border border-black hover:bg-primary-dull rounded-md mt-18 cursor-pointer">
         Explore all cars
         <img src={assets.arrow_icon} alt="arrow" />
       </button>

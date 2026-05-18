@@ -4,10 +4,15 @@
 * {
   font-family: "Outfit", sans-serif;
 }
+body {
+  background-color: var(--color-light);
+}
 
 @theme {
-  --color-primary: #C2A68C;
-  --color-primary-dull: #A3CCDA;
-  --color-light:#F0E491 ;
-  --color-borderColor: #A8BBA3;
+  --color-primary: #2A2927;
+  --color-primary-dull: #585651;
+  --color-light: #E3D8CC;
+  --color-borderColor: #C3B6A5;
+  --color-black: #2A2927;
+  --color-white: #E3D8CC;
 }

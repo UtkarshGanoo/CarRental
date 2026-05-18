@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+﻿import React, { useState } from "react";
 import Title from "../../components/Title";
 import { assets, cityList } from "../../assets/assets";
 import { useAppContext } from "../../Context/AppContext";
@@ -58,7 +58,7 @@ const AddCar = () => {
     }
   };
   return (
-    <div className="px-4 py-10 md:px-10 flex-1 bg-[#F0E491]">
+    <div className="px-4 py-10 md:px-10 flex-1 bg-light">
       <Title
         title={"Add New Car"}
         subTitle={
@@ -235,8 +235,8 @@ rounded-md outline-none"
           />
         </div>
         <button
-          className="flex items-center gap-2 px-4 py-2.5 mt-4 border border-b-gray-50 bg-[#F0E491]
-      hover:bg-[#A3CCDA]
+          className="flex items-center gap-2 px-4 py-2.5 mt-4 border border-b-gray-50 bg-light
+      hover:bg-primary-dull
      text-black rounded-md font-medium w-max cursor-pointer"
         >
           {/* <img src={assets.tick_icon} alt="" /> */}

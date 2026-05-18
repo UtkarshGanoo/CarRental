@@ -28,16 +28,16 @@ const Navbar = () => {
   return (
     <div
       className={`flex items-center justify-between px-6 md:px-16 lg:px-24 xl:px-32 py-4 text-black border-b border-borderColor relative transition-all ${
-        location.pathname === "/" ? "bg-light" : "bg-[#dfd283]"
+        location.pathname === "/" ? "bg-light" : "bg-light"
       } `}
     >
       <Link to="/">
-        <h3 className="h-8 text-4xl text-[#7D8D86]">Nomadiq</h3>
+        <h3 className="h-8 text-4xl text-primary">Nomadiq</h3>
       </Link>
 
       <div
         className={`max-sm:fixed max-sm:h-screen max-sm:w-full max-sm:top-16 max-sm:border-t border-borderColor right-0 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8 max-sm:p-4 transition-all duration-300 z-50 ${
-          location.pathname === "/" ? "bg-light" : "bg-[#dfd283]"
+          location.pathname === "/" ? "bg-light" : "bg-light"
         } ${open ? "max-sm:translate-x-0" : "max-sm:translate-x-full"}`}
       >
         {menuLinks.map((link, index) => (
@@ -68,7 +68,7 @@ const Navbar = () => {
             onClick={() => {
               user ? logout() : setShowLogin(true);
             }}
-            className="cursor-pointer px-8 py-2 bg-primary hover:bg-primary-dull transition-all text-black rounded-lg"
+            className="cursor-pointer px-8 py-2 bg-primary hover:bg-primary-dull transition-all text-white rounded-lg"
           >
             {user ? "Logout" : "Login"}
           </button>

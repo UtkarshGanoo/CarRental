@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+﻿import React, { useEffect, useState } from "react";
 
 import Title from "../../components/Title";
 import { useAppContext } from "../../Context/AppContext";
@@ -38,7 +38,7 @@ const ManageBookings = () => {
     fetchOwnerBookings();
   }, []);
   return (
-    <div className="px-4 pt-10 md:px-10 w-full bg-[#F0E491]">
+    <div className="px-4 pt-10 md:px-10 w-full bg-light">
       <Title
         title={"Manage Bookings"}
         subTitle={
@@ -82,7 +82,7 @@ const ManageBookings = () => {
                   {booking.price}
                 </td>
                 <td className="p-3 max-md:hidden">
-                  <span className="bg-[#F0E491] px-3 py-1 rounded-full text-xs">
+                  <span className="bg-light px-3 py-1 rounded-full text-xs">
                     offline
                   </span>
                 </td>

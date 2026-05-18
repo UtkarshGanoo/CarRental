@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+﻿import React, { useEffect, useState } from "react";
 import { assets } from "../../assets/assets";
 import Title from "../../components/owner/Title";
 import { useAppContext } from "../../Context/AppContext";
@@ -55,7 +55,7 @@ const Dashboard = () => {
   }, [isOwner]);
 
   return (
-    <div className="px-4 pt-10 md:px-10 flex-1 bg-[#F0E491]">
+    <div className="px-4 pt-10 md:px-10 flex-1 bg-light">
       <Title
         title={"Admin Dashboard"}
         subTitle={
@@ -72,7 +72,7 @@ const Dashboard = () => {
               <h1 className="text-xs text-black">{card.title}</h1>
               <p className="text-lg font-semibold">{card.value}</p>
             </div>
-            <div className="flex items-center justify-center w-10 h-10 rounded-full bg-[#F0E491]">
+            <div className="flex items-center justify-center w-10 h-10 rounded-full bg-light">
               <img src={card.icon} alt="" className="h-4 w-4" />
             </div>
           </div>
